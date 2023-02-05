@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+body{
+    border-top: 1rem solid crimson;
+    border-bottom: 1rem solid crimson;
+}
+.parent{
+    display: flex;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+h1 {
+	font-size: 4rem;
+	writing-mode: vertical-lr;
+}
+a {
+	text-decoration: none;
+	color: dodgerblue;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+h2 {
+	margin: 1rem;
+    font-size: 2rem;
+}
+.methods {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	margin: 1rem auto;
+}
+.methods > h3 {
+	border: 1px solid black;
+	border-collapse: collapse;
+    padding:.5rem;
+}
