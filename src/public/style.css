@@ -3,29 +3,28 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-body{
-    border-top: 1rem solid crimson;
-    border-bottom: 1rem solid crimson;
+html {
+	background-color: #eee;
 }
-.parent{
-    display: flex;
-    margin-top: 1rem;
-    padding-bottom: 1rem;
+body {
+	border-top: 1rem solid crimson;
+	border-bottom: 1rem solid crimson;
+}
+.parent {
+	display: flex;
+	margin-top: 0.5rem;
+	padding-bottom: 1rem;
 }
 h1 {
 	font-size: 4rem;
 	writing-mode: vertical-lr;
 }
-a {
-	text-decoration: none;
-	color: dodgerblue;
-	font-size: 1.3rem;
-	font-weight: 600;
-}
+
 h2 {
 	margin: 1rem;
-    font-size: 2rem;
+	font-size: 2rem;
 }
 .methods {
 	width: 100%;
@@ -36,5 +35,45 @@ h2 {
 .methods > h3 {
 	border: 1px solid black;
 	border-collapse: collapse;
-    padding:.5rem;
+	padding: 0.5rem;
+}
+.side {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+ul,
+li {
+	text-align: left;
+	font-size: 1.2rem;
+	list-style-type: "🌟 ";
+}
+ul {
+	width: max-content;
+	padding: 0.5rem;
+	margin: 0.5rem;
+	margin-top: none;
+}
+ul > h2 {
+	text-align: left;
+}
+.ins {
+	display: flex;
+	justify-content: space-around;
+	border: 2px solid crimson;
+}
+.keys {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: -0.8rem;
+	padding-bottom: 0.3rem;
+	font-size: 1.2rem;
+}
+.keys u {
+	text-decoration: underline;
+}
+u {
+	color: darkcyan;
+	text-decoration: none;
 }

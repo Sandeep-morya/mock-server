@@ -8,10 +8,10 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-        <div class="parent">
-            <h1>Mock Server 1.0</h1>
-			<div style="flex: 1;">
-                <h2>Methods supported</h2>
+		<div class="parent">
+			<h1>Mock Server 1.0</h1>
+			<div class="side">
+				<h2>Methods supported</h2>
 				<div class="methods">
 					<h3>GET</h3>
 					<h3>POST</h3>
@@ -19,12 +19,48 @@
 					<h3>PUT</h3>
 					<h3>DELETE</h3>
 				</div>
-                <br />
-			<a href="http://localhost:8080/comments">/comments</a>
-			<br />
-			<a href="http://localhost:8080/todos">/todos</a>
+				<br />
+				<div class="keys">
+					<h3>Default Keys :</h3>
+					<u>/comments (3)</u>
+					<u>/todos (193)</u>
+					<u>For more : follow Instructions</u>
+				</div>
+				<div class="ins">
+					<ul>
+						<h2>Instructions</h2>
+						<li>
+							<u>Add an array of object in db.json</u> file to start using it
+						</li>
+						<li><u>2 keys are already created</u> take example from those</li>
+						<li>to start the server :</li>
+						<li>open terminal in its origin/main folder</li>
+						<li>run <u>node src/index.js</u></li>
+						<br />
+						<li>BY <u>default PORT is: 8080</u></li>
+						<li>To change the PORT after node src/index.js write your PORT</li>
+						<li>eg: node src/index.js 3000</li>
+						<li>Recommended : <u>Use Default port</u></li>
+					</ul>
+					<ul>
+						<h2>Usage :</h2>
+						<li>Page -: <u>http://localhost:8080/key/?page=1</u></li>
+						<li>Limit -: <u>http://localhost:8080/key/?page=1&limit=10</u></li>
+
+						<li><u>PATCH | PUT | DELETE</u> -Request</li>
+						<li>url will be: <u>`http://localhost:8080/key/${id}`</u></li>
+
+						<li><u>GET</u> -Request</li>
+						<li>for all-url will be: <u>`http://localhost:8080/key`</u></li>
+						<li>
+							for single item-url will be:
+							<u>`http://localhost:8080/key/${id}`</u>
+						</li>
+						<li><u>POST</u> -Request</li>
+						<li>url will be: <u>`http://localhost:8080/key`</u></li>
+					</ul>
+				</div>
 			</div>
-			
 		</div>
 	</body>
 </html>

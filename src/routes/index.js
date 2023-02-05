@@ -94,4 +94,16 @@ dynamicRoute.get("/:key", (req, res) => {
 	}
 });
 
+dynamicRoute.get("/:key/:id", (req, res) => {
+	const data = JSON.parse(fs.readFileSync("db.json", "utf-8"));
+	const list = data[req.params.key];
+	const _id = Number(req.params.id);
+
+	if (list && _id && list[_id - 1]) {
+		res.status(200).send({ data: list[_id - 1], total_count: 1 });
+	} else {
+		res.status(404).send();
+	}
+});
+
 module.exports = dynamicRoute;
