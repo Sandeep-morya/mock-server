@@ -83,7 +83,11 @@ dynamicRoute.get("/:key", (req, res) => {
 			const end = page * limit;
 			const current = list.slice(start, end);
 			// res.status(200).json(current)
-			res.json({ data: current, total_count: current.length });
+			res.json({
+				data: current,
+				total_count: current.length,
+				total_pages: Math.ceil(list.length / limit),
+			});
 		}
 	} else {
 		res.status(404).send();
