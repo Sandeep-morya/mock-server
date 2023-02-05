@@ -5,4 +5,4 @@
   - open terminal in its origin/main folder
   - run `node src/index.js`
 - you can use page & limit query-params
-  image.png
+  [Alt text](image.png)
